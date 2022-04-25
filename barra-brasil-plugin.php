@@ -20,8 +20,8 @@ class BarraBrasilPlugin {
 
 function initBar() {
   $result = get_option('bb_model')=='1'
-      ? require_once 'wp-barra-brasil-IDG1\wp-barra-brasil.php' 
-      : require_once 'wp-barra-brasil-IDG2\wp-barra-brasil.php';
+      ? require_once 'wp-barra-brasil-IDG1'.DIRECTORY_SEPARATOR.'wp-barra-brasil.php' 
+      : require_once 'wp-barra-brasil-IDG2'.DIRECTORY_SEPARATOR.'wp-barra-brasil.php';
   $barra = new WpBarraBrasil\WpBarraBrasil();
 }
 

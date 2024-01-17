@@ -28,7 +28,7 @@ function initBar() {
   function settings() {
     add_settings_section('wcp_first_section', null, null, 'barra-brasil-settings-page');
     add_settings_field('bb_model', 'Modelo de Barra Brasil', array($this, 'locationHTML'), 'barra-brasil-settings-page', 'wcp_first_section');
-    register_setting('barrabrasilplugin', 'bb_model', array('sanitize_callback' => array($this, 'sanitizeBar'), 'default' => '2'));
+    register_setting('rmdmbarrabrasil', 'bb_model', array('sanitize_callback' => array($this, 'sanitizeBar'), 'default' => '2'));
   }
 
 function sanitizeBar($input) {

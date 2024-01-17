@@ -1,4 +1,4 @@
-# wp-barra-brasil
+# Rmdm-barra-brasil
 Implementa http://barra.governoeletronico.gov.br/
 
 A barra de Identidade Visual do Governo Federal na Internet tem a função de identificar, padronizar e integrar sítios e portais do Governo Federal. A barra também tem a função de proporcionar acesso direto ao Portal Brasil - brasil.gov.br, às informações públicas de acordo com a Lei de acesso à informação, aos canais de participação social, ao portal de serviços prestados pelos diversos órgãos - servicos.gov.br/, página com toda a legislação brasileira - planalto.gov.br/legislacao/ e link para os canais de comunicação do Governo Federal.
@@ -7,3 +7,9 @@ Com o objetivo de padronizar a codificação e garantir a aderência às normas 
 A publicação da barra pelos órgãos deverá ser feita de maneira dinâmica por meio da inclusão do código publicado no item Instruções para Uso da Barra no HTML do sítio ou portal.
 Após esta primeira publicação, as demais atualizações serão automáticas.
 A barra funciona de maneira unificada. Todos os sítios e portais que utilizam esta versão apresentam os conteúdos uniformizados.
+
+# Instalação
+Recomenda-se a instalação no Wordpress como *mu-plugin*, da seguinte forma:
+1. Crie o diretório **mu-plugins** dentro de **wp-content**.
+2. Copie o conteúdo para dentro do diretório **mu-plugins**.
+3. Atualize a página do seu navegador.

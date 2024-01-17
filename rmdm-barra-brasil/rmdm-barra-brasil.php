@@ -1,17 +1,17 @@
 <?php
 
 /**
-  Plugin Name: Barra Brasil WordPress Plugin
-  Description: Seleciona entre as versões IDG-1 e IDG2 da barra do governo brasileiro nas configurações do wordpress.
-  Version: 2.0
-  Plugin URI: https://github.com/hexemeister/wp-barra-brasil.git
+  Plugin Name: Barra Brasil para WordPress
+  Description: Insere a barra do governo brasileiro no wordpress, permitindo selecionar entre as versões IDG-1 e IDG2.
+  Version: 2.1
+  Plugin URI: https://github.com/hexemeister/rmdm-barra-brasil.git
   Author: Renato Moraes
   License: MIT
 */
 
 if( ! defined( 'ABSPATH' ) ) exit;  // Exit if accessed directly
 
-class BarraBrasilPlugin {
+class RmdmBarraBrasil {
   function __construct() {
     add_action('admin_menu', array($this, 'adminPage'));
     add_action('admin_init', array($this, 'settings'));
@@ -20,9 +20,9 @@ class BarraBrasilPlugin {
 
 function initBar() {
   $result = get_option('bb_model')=='1'
-      ? require_once 'wp-barra-brasil-IDG1'.DIRECTORY_SEPARATOR.'wp-barra-brasil.php' 
-      : require_once 'wp-barra-brasil-IDG2'.DIRECTORY_SEPARATOR.'wp-barra-brasil.php';
-  $barra = new WpBarraBrasil\WpBarraBrasil();
+      ? require_once 'barra-brasil-IDG1'.DIRECTORY_SEPARATOR.'barra-brasil-idg1.php' 
+      : require_once 'barra-brasil-IDG2'.DIRECTORY_SEPARATOR.'barra-brasil-idg2.php';
+  $barra = new RmdmBarraBrasil\RmdmBarraBrasil();
 }
 
   function settings() {
@@ -55,14 +55,14 @@ function locationHTML() { ?>
       <h1>Word Count Settings</h1>
       <form action="options.php" method="POST">
         <?php
-          settings_fields('barrabrasilplugin');
+          settings_fields('rmdmbarrabrasil');
           do_settings_sections('barra-brasil-settings-page');
           submit_button();
         ?>
       </form>
-      <p style="font-style: italic;">criado por <a href="https://github.com/hexemeister/wp-barra-brasil" target="_blank">Renato Moraes</a></p>
+      <p style="font-style: italic;">criado por <a href="https://github.com/hexemeister/rmdm-barra-brasil" target="_blank">Renato Moraes</a></p>
     </div>
   <?php }
 }
 
-$barraBrasilPlugin = new BarraBrasilPlugin();
+$rmdmBarraBrasil = new RmdmBarraBrasil();

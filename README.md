@@ -52,6 +52,7 @@ A versão IDG2 da barra brasil é ativada por padrão. Caso queira trocar, proce
 
 ## Sobre a barra brasil
 Texto retirado da [documentação](https://barra.governoeletronico.gov.br/atualize.html#:~:text=A%20barra%20de%20Identidade%20Visual,e%20portais%20do%20Governo%20Federal.) da barra no Governo Eletrônico:
+
 A barra de Identidade Visual do Governo Federal na Internet tem a função de identificar, padronizar e integrar sítios e portais do Governo Federal. A barra também tem a função de proporcionar acesso direto ao Portal Brasil - brasil.gov.br, às informações públicas de acordo com a Lei de acesso à informação, aos canais de participação social, ao portal de serviços prestados pelos diversos órgãos - servicos.gov.br/, página com toda a legislação brasileira - planalto.gov.br/legislacao/ e link para os canais de comunicação do Governo Federal. Seu uso está normatizado por meio da Instrução Normativa nº 8, de 19 de dezembro de 2014, que pode ser encontrada no sítio da Secretaria de Comunicação Social da Presidência da República - Secom.
 
 Com o objetivo de padronizar a codificação e garantir a aderência às normas da Administração Pública, a nova versão da barra utiliza uma arquitetura integrada e dinâmica, não precisa ser desenvolvida, pois sua funcionalidade encontra-se corretamente configurada e pronta para uso.

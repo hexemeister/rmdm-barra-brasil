@@ -2,12 +2,12 @@
  * 
  */
 
-var barra_brasil_element = jQuery(WpBarraBrasil.element_to_prepend);
+var barra_brasil_element = jQuery(RmdmBarraBrasil.element_to_prepend);
 
 /** 
- * Hack for wp-divi theme
+ * Hack for Rmdm-divi theme
  */
-if(jQuery('#main-header').length > 0 && (WpBarraBrasil.element_to_prepend == 'BODY' || WpBarraBrasil.element_to_prepend == 'body' ))
+if(jQuery('#main-header').length > 0 && (RmdmBarraBrasil.element_to_prepend == 'BODY' || RmdmBarraBrasil.element_to_prepend == 'body' ))
 {
 	barra_brasil_element = jQuery('#main-header');
 }

@@ -23,7 +23,7 @@ class RmdmBarraBrasil
 		wp_enqueue_script('BarraBrasil', '//barra.brasil.gov.br/barra_2.0.js', array('RmdmBarraBrasil'), '0.1.0', true);
 		
 		$data = array(
-			'element_to_prepend' => apply_filters('wp-barra-brasil-position-element', get_theme_mod('RmdmBarraBrasilHeaderElement', 'BODY'))
+			'element_to_prepend' => apply_filters('rmdm-barra-brasil-position-element', get_theme_mod('RmdmBarraBrasilHeaderElement', 'BODY'))
 		);
 		
 		wp_localize_script('RmdmBarraBrasil', 'RmdmBarraBrasil', $data);

@@ -1,5 +1,5 @@
 # Rmdm-barra-brasil
-Implementa http://barra.governoeletronico.gov.br/ em sites Wordpress. Distribuído sob a licença MIT.
+Implementa http://barra.governoeletronico.gov.br/ em sites Wordpress. Distribuído sob a licença GPL2.
 
 ## Instalação
 Recomenda-se a instalação no Wordpress como *mu-plugin* dado que plugins deste tipo não podem ser desativados, mesmo por usuários que possuam perfil administrador no Wordpress. Também não é necessário ativá-lo, já que este tipo de plugin é ativado por padrão.

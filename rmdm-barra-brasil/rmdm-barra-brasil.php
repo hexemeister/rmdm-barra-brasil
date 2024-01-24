@@ -6,7 +6,8 @@
   Version: 2.1
   Plugin URI: https://github.com/hexemeister/rmdm-barra-brasil.git
   Author: Renato Moraes
-  License: MIT
+  License: GPL2
+  License URI: https://www.gnu.org/licenses/gpl-2.0.html
 */
 
 if( ! defined( 'ABSPATH' ) ) exit;  // Exit if accessed directly

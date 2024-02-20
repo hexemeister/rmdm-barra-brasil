@@ -61,7 +61,7 @@ class RmdmBarraBrasil
 		 * 
 		 */
 		$wp_customize->add_section( 'RmdmBarraBrasil', array(
-			'title'    => __( 'Barra Brasil', 'RmdmBarraBrasil' ),
+			'title'    => __( 'Barra Brasil', 'rmdm-barra-brasil' ),
 			'priority' => 30,
 		) );
 	
@@ -72,8 +72,8 @@ class RmdmBarraBrasil
 		) );
 		
 		$wp_customize->add_control( 'RmdmBarraBrasilHeaderElement', array(
-			'label'      => __( 'Elemento HTML onde deve ser adicionado o código da barra (para id inicie com "#" e classe CSS com ".")', 'RmdmBarraBrasil'),
-			'section'    => 'RmdmBarraBrasil',
+			'label'      => __( 'Elemento HTML onde deve ser adicionado o código da barra (para id inicie com "#" e classe CSS com ".")', 'rmdm-barra-brasil'),
+			'section'    => 'rmdm-barra-brasil',
 		) );
 		
 		$wp_customize->add_setting('RmdmBarraBrasilFooterColor', array(
@@ -81,16 +81,16 @@ class RmdmBarraBrasil
 		));
 		
 		$themecolors = array(
-			'verde' => __('Verde', 'RmdmBarraBrasil'),
-			'amarelo' => __('Amarelo', 'RmdmBarraBrasil'),
-			'azul' => __('Azul', 'RmdmBarraBrasil'),
-			'branco' => __('Branco', 'RmdmBarraBrasil'),
+			'verde' => __('Verde', 'rmdm-barra-brasil'),
+			'amarelo' => __('Amarelo', 'rmdm-barra-brasil'),
+			'azul' => __('Azul', 'rmdm-barra-brasil'),
+			'branco' => __('Branco', 'rmdm-barra-brasil'),
 		);
 		
 		$wp_customize->add_control( 'RmdmBarraBrasilFooterColor', array(
 			'settings' => 'RmdmBarraBrasilFooterColor',
-			'label'   => __('Selecione a cor do seu tema para adequar ao padrão do rodapé (footer)', 'RmdmBarraBrasil').':',
-			'section'  => 'RmdmBarraBrasil',
+			'label'   => __('Selecione a cor do seu tema para adequar ao padrão do rodapé (footer)', 'rmdm-barra-brasil').':',
+			'section'  => 'rmdm-barra-brasil',
 			'type'    => 'select',
 			'choices' => $themecolors,
 		));
@@ -100,8 +100,8 @@ class RmdmBarraBrasil
 		));
 		
 		$wp_customize->add_control( 'RmdmBarraBrasilServiceNumber', array(
-			'label'      => __( 'número correto do órgão no SIORG. Acesse o SIORG e procure pelo seu órgão.', 'RmdmBarraBrasil').' http://siorg.planejamento.gov.br',
-			'section'    => 'RmdmBarraBrasil',
+			'label'      => __( 'número correto do órgão no SIORG. Acesse o SIORG e procure pelo seu órgão.', 'rmdm-barra-brasil').' http://siorg.planejamento.gov.br',
+			'section'    => 'rmdm-barra-brasil',
 		) );
 	}
 	

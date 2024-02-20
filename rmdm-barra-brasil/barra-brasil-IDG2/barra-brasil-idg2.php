@@ -39,7 +39,7 @@ class RmdmBarraBrasil
 	
 	public function footer()
 	{
-		echo '<div id="footer-brasil" class="'.get_theme_mod('RmdmBarraBrasilFooterColor', 'verde').'"></div>';
+		echo '<div id="footer-brasil" class="'.esc_attr(get_theme_mod('RmdmBarraBrasilFooterColor', 'verde')).'"></div>';
 	}
 	
 	public function head()
@@ -47,7 +47,7 @@ class RmdmBarraBrasil
 		$theme_opt = get_theme_mod('RmdmBarraBrasilServiceNumber', '');
 		if(!empty($theme_opt))
 		{
-			echo '<meta property="creator.productor" content="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/'.$theme_opt.'">';
+			echo '<meta property="creator.productor" content="', esc_url('http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/'.$theme_opt),'">';
 		}
 	}
 	

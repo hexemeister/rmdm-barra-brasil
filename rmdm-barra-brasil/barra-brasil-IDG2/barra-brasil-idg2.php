@@ -72,7 +72,7 @@ class RmdmBarraBrasil
 		) );
 		
 		$wp_customize->add_control( 'RmdmBarraBrasilHeaderElement', array(
-			'label'      => __( 'Elemento HTML onde deve se adionado o código da barra (para id inicie com "#" e classe CSS com ".")', 'RmdmBarraBrasil'),
+			'label'      => __( 'Elemento HTML onde deve ser adicionado o código da barra (para id inicie com "#" e classe CSS com ".")', 'RmdmBarraBrasil'),
 			'section'    => 'RmdmBarraBrasil',
 		) );
 		

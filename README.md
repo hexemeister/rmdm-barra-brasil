@@ -1,10 +1,16 @@
 # Rmdm-barra-brasil
-Implementa http://barra.governoeletronico.gov.br/ em sites Wordpress. Distribuído sob a licença CPL2.
+Implementa http://barra.governoeletronico.gov.br/ em sites Wordpress. Distribuído sob a licença GPL2.
 
 ## Instalação
-Recomenda-se a instalação no Wordpress como *mu-plugin* dado que plugins deste tipo não podem ser desativados, mesmo por usuários que possuam perfil administrador no Wordpress. Também não é necessário ativá-lo, já que este tipo de plugin é ativado por padrão.
+* Para instalar a barra brasil como simples plugin, proceda da seguinte maneira:
+1. Faça o download do Rmdm-Barra-Brasil e extraia o seu conteúdo.
+2. Na instalação do Wordpress, localize a pasta **plugins** dentro de **wp-content**.
+3. Do conteúdo extraído, copie apenas a pasta **rmdm-barra-brasil** para a pasta **plugins** do Wordpress.
+4. No dashboard do Wordpress, clique na opção Plugins, localize o item **Barra Brasil para WordPress** e ative-o.
+5. Verifique o site, a barra já deve estar disponível.
+É possível a instalação no Wordpress como *mu-plugin* dado que plugins deste tipo não podem ser desativados, mesmo por usuários que possuam perfil administrador no Wordpress. Também não é necessário ativá-lo, já que este tipo de plugin é ativado por padrão.
 
-Para instalar, proceda da seguinte forma:
+* Também é possível instalar como **mu-plugin**. Para isso proceda da seguinte forma:
 1. Faça o download do Rmdm-Barra-Brasil e extraia o seu conteúdo.
 2. Na instalação do Wordpress, localize a pasta **wp-content** e crie a pasta **mu-plugins**, dentro dela.
 3. Copie todo o conteúdo extraído para dentro da pasta **mu-plugins** criada na instalação do Wordpress.
@@ -35,12 +41,6 @@ Como referência, a estrutura de arquivos e pastas deverá ser como essa:
         │   └── rmdm-barra-brasil.php
         └── rmdm-barra-brasil-index.php
 ```
-Também é possível instalar a barra brasil como simples plugin, procedendo da seguinte maneira:
-1. Faça o download do Rmdm-Barra-Brasil e extraia o seu conteúdo.
-2. Na instalação do Wordpress, localize a pasta **plugins** dentro de **wp-content**.
-3. Do conteúdo extraído, copie apenas a pasta **rmdm-barra-brasil** para a pasta **plugins** do Wordpress.
-4. No dashboard do Wordpress, clique na opção Plugins, localize o item **Barra Brasil para WordPress** e ative-o.
-5. Verifique o site, a barra já deve estar disponível.
 
 ## Configuração
 A versão IDG2 da barra brasil é ativada por padrão. Caso queira trocar, proceda da seguinte forma:

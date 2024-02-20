@@ -8,5 +8,4 @@ Stable tag: 2.1
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
-Implementa http://barra.governoeletronico.gov.br/ em sites Wordpress. Suporta a seleção dentre as versões IDG-1 e IDG-2. A publicação da barra é realizada de maneira dinâmica por meio da inclusão do código publicado no link. Toda e qualquer atualização em seu conteúdo será automática pelo governo brasileiro, tornando a barra uniformizada em todos os sítios e portais que a utilizam.
-Distribuído sob a licença GPL2.
+Implementa http://barra.governoeletronico.gov.br/ em sites Wordpress. Suporta a seleção dentre as versões IDG-1 e IDG-2. A publicação da barra é realizada de maneira dinâmica por meio da inclusão do código publicado no link do governo eletrônico brasileiro. Toda e qualquer atualização em seu conteúdo será automática pelos orgãos responsáveis, tornando a barra uniformizada em todos os sítios e portais que a utilizam. Distribuído sob a licença GPL2.

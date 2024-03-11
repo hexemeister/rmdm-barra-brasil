@@ -14,25 +14,25 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 class RmdmBarraBrasil {
   function __construct() {
-    add_action('admin_menu', array($this, 'adminPage'));
-    add_action('admin_init', array($this, 'settings'));
-    $this->initBar();
+    add_action('admin_menu', array($this, 'RMDM_BARRA_BRASIL_adminPage'));
+    add_action('admin_init', array($this, 'RMDM_BARRA_BRASIL_settings'));
+    $this->RMDM_BARRA_BRASIL_initBar();
   }
 
-function initBar() {
+function RMDM_BARRA_BRASIL_initBar() {
   $result = get_option('bb_model')=='1'
       ? require_once 'barra-brasil-IDG1'.DIRECTORY_SEPARATOR.'barra-brasil-idg1.php' 
       : require_once 'barra-brasil-IDG2'.DIRECTORY_SEPARATOR.'barra-brasil-idg2.php';
   $barra = new RmdmBarraBrasil\RmdmBarraBrasil();
 }
 
-  function settings() {
+  function RMDM_BARRA_BRASIL_settings() {
     add_settings_section('wcp_first_section', null, null, 'barra-brasil-settings-page');
-    add_settings_field('bb_model', 'Modelo de Barra Brasil', array($this, 'locationHTML'), 'barra-brasil-settings-page', 'wcp_first_section');
-    register_setting('rmdmbarrabrasil', 'bb_model', array('sanitize_callback' => array($this, 'sanitizeBar'), 'default' => '2'));
+    add_settings_field('bb_model', 'Modelo de Barra Brasil', array($this, 'RMDM_BARRA_BRASIL_locationHTML'), 'barra-brasil-settings-page', 'wcp_first_section');
+    register_setting('rmdmbarrabrasil', 'bb_model', array('sanitize_callback' => array($this, 'RMDM_BARRA_BRASIL_sanitizeBar'), 'default' => '2'));
   }
 
-function sanitizeBar($input) {
+function RMDM_BARRA_BRASIL_sanitizeBar($input) {
   if ($input != '1' AND $input != '2') {
     add_settings_error('bb_model', 'wcp_location_error', 'O modelo escolhido de Barra Brasil deve ser IDG 1 ou IDG 2!');
     return get_option('bb_model');
@@ -40,20 +40,20 @@ function sanitizeBar($input) {
   return $input;
 }
 
-function locationHTML() { ?>
+function RMDM_BARRA_BRASIL_locationHTML() { ?>
   <select name="bb_model">
     <option value="2" <?php selected(get_option('bb_model'), '2') ?>>IDG 2</option>
     <option value="1" <?php selected(get_option('bb_model'), '1') ?>>IDG 1</option>
   </select>
 <?php }
 
-  function adminPage() {
-    add_options_page('Barra Brasil Configuração', 'Barra Brasil Config', 'manage_options', 'barra-brasil-settings-page', array($this, 'ourHTML'));
+  function RMDM_BARRA_BRASIL_adminPage() {
+    add_options_page('Barra Brasil Configuração', 'Barra Brasil Config', 'manage_options', 'barra-brasil-settings-page', array($this, 'RMDM_BARRA_BRASIL_ourHTML'));
   }
   
-  function ourHTML() { ?>
+  function RMDM_BARRA_BRASIL_ourHTML() { ?>
     <div class="wrap">
-      <h1>Word Count Settings</h1>
+      <h1>RMDM Barra Brasil Settings</h1>
       <form action="options.php" method="POST">
         <?php
           settings_fields('rmdmbarrabrasil');

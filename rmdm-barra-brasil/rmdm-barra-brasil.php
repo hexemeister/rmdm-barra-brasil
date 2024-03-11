@@ -10,7 +10,7 @@
   License URI: https://www.gnu.org/licenses/gpl-2.0.html
 */
 
-if( ! defined( 'ABSPATH' ) ) exit;  // Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 class RmdmBarraBrasil {
   function __construct() {

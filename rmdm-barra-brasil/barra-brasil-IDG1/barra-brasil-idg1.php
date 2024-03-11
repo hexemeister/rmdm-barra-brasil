@@ -1,9 +1,9 @@
 <?php
 
-if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
-
 // PHP 5.3 and later:
 namespace RmdmBarraBrasil;
+
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 class RmdmBarraBrasil
 {

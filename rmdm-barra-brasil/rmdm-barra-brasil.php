@@ -48,10 +48,10 @@ function RMDM_BARRA_BRASIL_locationHTML() { ?>
 <?php }
 
   function RMDM_BARRA_BRASIL_adminPage() {
-    add_options_page('Barra Brasil Configuração', 'Barra Brasil Config', 'manage_options', 'barra-brasil-settings-page', array($this, 'RMDM_BARRA_BRASIL_ourHTML'));
+    add_options_page('Barra Brasil Configuração', 'Barra Brasil Config', 'manage_options', 'barra-brasil-settings-page', array($this, 'RMDM_BARRA_BRASIL_Content_HTML'));
   }
   
-  function RMDM_BARRA_BRASIL_ourHTML() { ?>
+  function RMDM_BARRA_BRASIL_Content_HTML() { ?>
     <div class="wrap">
       <h1>RMDM Barra Brasil Settings</h1>
       <form action="options.php" method="POST">
